@@ -1,0 +1,92 @@
+Charges - checking spelling and Grammers
+      - single word or three proposition before 'Felony' or 'Misdemeanor' (Rule based) - 
+            - if proposition available - pass
+            or fail
+      - charge should not start with felony and misdemeanor
+      - duplicate words (Rule based)
+      - abbreviations in the charges (gpt based solutions- require open ai api access)
+      - some incorrect or truncated words at the end (gpt based solutions- require open ai api access)
+
+Future LAD
+      - Add/remove years/months/dates from sentencing to disposition date, compare the date with current date if its future or not (Rule based)
+     
+    - Below are Jail synonyms, add them with disposition date, if suspended or credit time server given, we need to seperate it
+        Jail
+        Prison
+        Custody
+        Department of corrections
+        House of Corrections
+        Detention Center
+        Penitentiary
+        Incarcerated
+        Confinement
+
+    - need to find other terms for jail and add to synonyms
+
+    - Suspended in sentence details
+        JAIL SUSPENDED|10 YEARS <----------------------
+        JAIL SUSPENDED|10 YEARS
+        PRISON|40 YEARS/SUSPENDED 10 YEARS
+        JAIL SUSPENDED|2 YEARS
+        IMPRISONMENT|70 MONTHS/SUSPENDED 10 MONTHS
+        409|PRISON|10 YEARS/SUSPENDED 5 YEARS
+        JAIL|5 YEARS/SUSPENDED 2 YEARS
+        JAIL|15 YEARS/SUSPENDED 10 YEARS
+        IMPRISONMENT|70 MONTHS/SUSPENDED 10 MONTHS
+        JAIL|5 YEARS/SUSPENDED 2 YEARS <-----------------------
+        409|PRISON|10 YEARS/SUSPENDED 5 YEARS
+        PRISON|10 YEARS/ SUSPENDED|5 YEARS <---------------------
+        JAIL|5 YEARS/SUSPENDED 2 YEARS
+        CUSTODY|14 YEARS/SUSPENDED <---------------------- if there is no years mentioned after suspeded, all duration are suspended
+        JAIL SUSPENDED|5 YEARS 
+    - Prison in sentence details
+        IMPRISONMENT|70 MONTHS
+        409|PRISON|10 YEARS
+        PRISON|40 YEARS
+        PRISON|50 YEARS
+        PRISON|10 YEARS
+        PRISON|20 YEARS
+        409|PRISON|10 YEARS
+        PRISON|40 YEARS/SUSPENDED 10 YEARS
+        IMPRISONMENT|70 MONTHS/SUSPENDED 10 MONTHS
+        409|PRISON|10 YEARS/SUSPENDED 5 YEARS
+        IMPRISONMENT|70 MONTHS/SUSPENDED <-------------------------
+        409|PRISON|10 YEARS/SUSPENDED 5 YEARS
+        PRISON|10 YEARS
+        PRISON|10 YEARS/ SUSPENDED|5 YEARS <-------------------------
+        PRISON|5 YEARS
+        PRISON|5 YEARS
+        464|RE SENTENCED ON|03/15/2022|PRISON 2 YEARS BALANCE DUE: $464.00 <-------------- re-sentance, probation violation, probation revokation and jail release date are future date flag
+    - PENITENTIARY in sentence details
+        PENITENTIARY|15 YEARS
+        PENITENTIARY|4 YEARS TO 8 YEARS
+        PENITENTIARY|MINIMUM 5 YEARS TO MAXIMUM 10 YEARS <-------------------- only consider minimum years to the disposition date
+        PENITENTIARY|120 MONTHS
+        PENITENTIARY|2 YEARS TO 4 YEARS<-------------------- only consider minimum years to the disposition date
+        409|PENITENTIARY|10 YEARS
+FCRA
+      - Manual - if there are no sentence details (Rule based)
+      - Manual - if there is no release date in the sentence details (Rule based)
+      - Manual - Release date is within 7 years (Rule based)
+      - Manual - disposition date is more than 7 years (Rule based)
+
+new rules
+    - ref5 in rulebook, refer state, check the columns - "Position_Location" and "ADDR_STATE_CD" is matched, need to proceed
+        - not match above, ignore
+    - DISPOSTION_DATE is more than 7 years from today to past - proceed further
+        - not match above, ignore
+    - check for jail release date(or-synonyms of jail release date) in both sentence column, 
+        - validate the date is within 7 years, ignore, or proceed
+        - no jail release date, flag fail
+        - jail release date is future flag fail.
+    
+i need find whether defendant is currently in jail based on sentence details.
+the sentence details contains jail duration, (jail can be given as prison or IMPRISONMENT or any other jail synonyms)
+jail duration given in years. and if its suspended, it will be given either complete suspended. 
+if its partially suspended, it will be given suspended 2 years like that, we need to seperate the suspnded from jail duration.
+once jail duration calculated, we need to calculate the date from disposition date. if there is re-sentenced date is given, we need to add the jail duration from resentenced date
+if the date is above today date, its reportable.
+
+disposition date = 15-07-2015
+sentence details = PROBATION; ; 3 YEARS; FINE; 1905; ; RE SENTENCED; ; ON 05/05/2022; JAIL; ; 5 YEARS
+

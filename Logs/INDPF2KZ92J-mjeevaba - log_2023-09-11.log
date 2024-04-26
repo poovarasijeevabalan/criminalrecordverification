@@ -1,0 +1,2 @@
+{"timestamp": "2023-09-11 14:09:03", "level": "INFO", "module": "test", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-09-11 14:09:22", "level": "INFO", "module": "test", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}

@@ -1,0 +1,18 @@
+{"timestamp": "2024-03-24 18:19:13", "level": "INFO", "module": "main", "function": "<module>", "line": 43, "message": "nsopw-- execution started", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:19:13", "level": "INFO", "module": "main", "function": "process_transaction", "line": 74, "message": "process started", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:19:13", "level": "INFO", "module": "z_process", "function": "process", "line": 18, "message": "12 - transaction started", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:20:33", "level": "INFO", "module": "z_process", "function": "process", "line": 23, "message": "12 - transaction completed", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:20:33", "level": "INFO", "module": "main", "function": "process_transaction", "line": 74, "message": "process started", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:20:33", "level": "INFO", "module": "z_process", "function": "process", "line": 18, "message": "13 - transaction started", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:24:26", "level": "INFO", "module": "z_process", "function": "process", "line": 23, "message": "13 - transaction completed", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:24:26", "level": "INFO", "module": "main", "function": "process_transaction", "line": 74, "message": "process started", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:24:26", "level": "INFO", "module": "z_process", "function": "process", "line": 18, "message": "14 - transaction started", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:27:41", "level": "INFO", "module": "z_process", "function": "process", "line": 23, "message": "14 - transaction completed", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:27:41", "level": "INFO", "module": "main", "function": "process_transaction", "line": 74, "message": "process started", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:27:41", "level": "INFO", "module": "z_process", "function": "process", "line": 18, "message": "15 - transaction started", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:28:33", "level": "INFO", "module": "z_process", "function": "process", "line": 23, "message": "15 - transaction completed", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:28:33", "level": "INFO", "module": "main", "function": "process_transaction", "line": 74, "message": "process started", "process": "nsopw"}
+{"timestamp": "2024-03-24 18:28:33", "level": "INFO", "module": "z_process", "function": "process", "line": 18, "message": "16 - transaction started", "process": "nsopw"}
+{"timestamp": "2024-03-24 19:56:25", "level": "INFO", "module": "main", "function": "<module>", "line": 43, "message": "nsopw-- execution started", "process": "nsopw"}
+{"timestamp": "2024-03-24 19:56:25", "level": "INFO", "module": "main", "function": "process_transaction", "line": 74, "message": "process started", "process": "nsopw"}
+{"timestamp": "2024-03-24 19:56:25", "level": "INFO", "module": "z_process", "function": "process", "line": 18, "message": "16 - transaction started", "process": "nsopw"}

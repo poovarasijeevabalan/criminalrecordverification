@@ -1,0 +1,154 @@
+{"timestamp": "2023-08-29 15:09:26", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 15:09:26", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 15:09:26", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 15:09:29", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 15:09:29", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 15:09:29", "level": "INFO", "module": "main", "function": "process_transaction", "line": 66, "message": "process started", "process": "ddqc"}
+{"timestamp": "2023-08-29 15:09:29", "level": "ERROR", "module": "main", "function": "process_transaction", "line": 73, "message": "exception in proess - process() missing 1 required positional argument: 'logger'", "process": "ddqc"}
+{"timestamp": "2023-08-29 16:58:40", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 16:58:47", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 16:59:01", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 16:59:05", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 16:59:18", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:02:28", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:02:41", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:02:41", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:02:44", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:03:26", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:03:35", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:03:35", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:03:40", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:03:40", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:03:48", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:03:53", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:04:35", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:05:21", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:06:59", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:07:05", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:07:05", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:07:09", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:07:09", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:39:46", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:39:49", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:39:49", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:39:53", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:41:02", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:41:06", "level": "INFO", "module": "main", "function": "process_transaction", "line": 65, "message": "process started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:41:06", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 69, "message": "process completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:42:40", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:42:43", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:42:43", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:42:46", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:43:14", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:43:38", "level": "INFO", "module": "main", "function": "process_transaction", "line": 65, "message": "process started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:45:24", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:45:25", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:45:25", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:45:29", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:45:29", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:46:21", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:46:31", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:46:31", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:46:35", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:47:02", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:47:08", "level": "INFO", "module": "main", "function": "process_transaction", "line": 65, "message": "process started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:47:28", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 69, "message": "process completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:48:51", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:48:53", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:48:53", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:48:56", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:49:24", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:49:27", "level": "INFO", "module": "main", "function": "process_transaction", "line": 65, "message": "process started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:49:29", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 69, "message": "process completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:51:05", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:51:06", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:51:06", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:51:09", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:51:37", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:51:50", "level": "INFO", "module": "main", "function": "process_transaction", "line": 65, "message": "process started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:51:52", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 69, "message": "process completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:51:55", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 79, "message": "set transaction completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:51:55", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:53:22", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:53:22", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:53:22", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:53:25", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:53:37", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:53:37", "level": "INFO", "module": "main", "function": "process_transaction", "line": 65, "message": "process started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:53:39", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 69, "message": "process completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:58:44", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:58:44", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:58:44", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:58:47", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:58:59", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:58:59", "level": "INFO", "module": "main", "function": "process_transaction", "line": 65, "message": "process started", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:01", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 69, "message": "process completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:05", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 79, "message": "set transaction completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:05", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:05", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:07", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:07", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:09", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:09", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:11", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:11", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:13", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:13", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:15", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:15", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:17", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:17", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:19", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 17:59:19", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:41:51", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:41:51", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:41:51", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:41:54", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 55, "message": "init all application completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:07", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:07", "level": "INFO", "module": "main", "function": "process_transaction", "line": 65, "message": "process started", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:09", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 69, "message": "process completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:13", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 79, "message": "set transaction completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:13", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:13", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:15", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:15", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:17", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:17", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:19", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:19", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:21", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:21", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:23", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:23", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:25", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 61, "message": "get transaction data completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:42:25", "level": "DEBUG", "module": "main", "function": "run", "line": 90, "message": "transaction data received empty. so exiting the process", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:48:17", "level": "INFO", "module": "main", "function": "<module>", "line": 38, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:48:17", "level": "DEBUG", "module": "main", "function": "__init__", "line": 45, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-08-29 20:48:17", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 50, "message": "init all settings completed", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:02:14", "level": "INFO", "module": "test", "function": "<module>", "line": 25, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:02:25", "level": "INFO", "module": "fr_process", "function": "process", "line": 22, "message": "process--  started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:04:10", "level": "INFO", "module": "test", "function": "<module>", "line": 25, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:04:21", "level": "INFO", "module": "fr_process", "function": "process", "line": 22, "message": "process--  started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:07:16", "level": "INFO", "module": "test", "function": "<module>", "line": 26, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:07:27", "level": "INFO", "module": "fr_process", "function": "process", "line": 23, "message": "process--  started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:09:14", "level": "INFO", "module": "test", "function": "<module>", "line": 26, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:09:24", "level": "INFO", "module": "fr_process", "function": "process", "line": 23, "message": "process--  started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:10:04", "level": "INFO", "module": "test", "function": "<module>", "line": 26, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:10:14", "level": "INFO", "module": "fr_process", "function": "process", "line": 23, "message": "process--  started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:10:47", "level": "INFO", "module": "test", "function": "<module>", "line": 26, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:10:57", "level": "INFO", "module": "fr_process", "function": "process", "line": 23, "message": "process--  started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:10:57", "level": "ERROR", "module": "fr_process", "function": "process", "line": 29, "message": "None", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:12:54", "level": "INFO", "module": "test", "function": "<module>", "line": 26, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:13:04", "level": "INFO", "module": "fr_process", "function": "process", "line": 23, "message": "process--  started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:13:04", "level": "ERROR", "module": "fr_process", "function": "process", "line": 29, "message": "Traceback (most recent call last):\n  File \"c:\\Users\\mjeevaba\\Documents\\Python\\DDQC\\DDQC 2.0\\Code\\DDQC Rule Engine\\Project\\fr_process.py\", line 26, in process\n    print(1/0)\n          ~^~\nZeroDivisionError: division by zero\n", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:15:26", "level": "INFO", "module": "test", "function": "<module>", "line": 26, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:15:36", "level": "INFO", "module": "fr_process", "function": "process", "line": 23, "message": "process--  started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:15:36", "level": "ERROR", "module": "fr_process", "function": "process", "line": 29, "message": "Traceback (most recent call last):\n  File \"c:\\Users\\mjeevaba\\Documents\\Python\\DDQC\\DDQC 2.0\\Code\\DDQC Rule Engine\\Project\\fr_process.py\", line 26, in process\n    print(1/0)\n          ~^~\nZeroDivisionError: division by zero\n", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:15:36", "level": "ERROR", "module": "fr_process", "function": "process", "line": 30, "message": "An error occurred: division by zero", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:17:34", "level": "INFO", "module": "test", "function": "<module>", "line": 26, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:17:51", "level": "INFO", "module": "test", "function": "<module>", "line": 27, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:18:01", "level": "INFO", "module": "fr_process", "function": "process", "line": 23, "message": "process--  started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:18:01", "level": "ERROR", "module": "test", "function": "<module>", "line": 38, "message": "Traceback (most recent call last):\n  File \"c:\\Users\\mjeevaba\\Documents\\Python\\DDQC\\DDQC 2.0\\Code\\DDQC Rule Engine\\test.py\", line 36, in <module>\n    process(config, dict_transaction)\n  File \"c:\\Users\\mjeevaba\\Documents\\Python\\DDQC\\DDQC 2.0\\Code\\DDQC Rule Engine\\Project\\fr_process.py\", line 24, in process\n    print(1/0)\n          ~^~\nZeroDivisionError: division by zero\n", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:19:21", "level": "INFO", "module": "test", "function": "<module>", "line": 27, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:19:31", "level": "INFO", "module": "fr_process", "function": "process", "line": 23, "message": "process--  started", "process": "ddqc"}
+{"timestamp": "2023-08-29 21:19:31", "level": "ERROR", "module": "test", "function": "<module>", "line": 38, "message": "Traceback (most recent call last):\n  File \"c:\\Users\\mjeevaba\\Documents\\Python\\DDQC\\DDQC 2.0\\Code\\DDQC Rule Engine\\test.py\", line 36, in <module>\n    process(config, dict_transaction)\n  File \"c:\\Users\\mjeevaba\\Documents\\Python\\DDQC\\DDQC 2.0\\Code\\DDQC Rule Engine\\Project\\fr_process.py\", line 24, in process\n    print(1/0)\n          ~^~\nZeroDivisionError: division by zero\n", "process": "ddqc"}

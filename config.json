@@ -1,0 +1,27 @@
+
+{
+    "process_name":"nsopw",
+    "log_path":"Logs",
+    "project_name":"nsopw",
+    "res_combinations_check": "Data\\res_combinations_check.xlsx",
+    
+    "max_retry_count":3,
+    
+    "host":"127.0.0.1",
+    "port": "3306",
+    "user":"root",
+    "password":"1234",
+    "database":"automation",
+    
+    "log_level":"debug",
+
+    "mail_from":"jeevabalan.m@fadv.com",
+    "mail_to":"jeevabalan.m@fadv.com",
+    "mail_cc":"jeevabalan.m@fadv.com",
+    "mail_server":"mail.fadv.com",
+    "mail_port":25,
+
+    "bs_states":"MI", 
+    "selenium_states": "CA,TX"
+    
+    }

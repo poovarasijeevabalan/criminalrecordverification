@@ -1,0 +1,3 @@
+{"timestamp": "2023-09-05 08:46:17", "level": "INFO", "module": "main", "function": "<module>", "line": 44, "message": "ddqc-- execution started", "process": "ddqc"}
+{"timestamp": "2023-09-05 08:46:17", "level": "DEBUG", "module": "main", "function": "__init__", "line": 52, "message": "Framework initiated", "process": "ddqc"}
+{"timestamp": "2023-09-05 08:46:17", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 57, "message": "init all settings completed", "process": "ddqc"}

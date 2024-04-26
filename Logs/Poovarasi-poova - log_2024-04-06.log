@@ -1,0 +1,44 @@
+{"timestamp": "2024-04-06 11:48:34", "level": "INFO", "module": "main", "function": "<module>", "line": 43, "message": "nsopw-- execution started", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:34", "level": "DEBUG", "module": "main", "function": "__init__", "line": 53, "message": "Framework initiated", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:34", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 58, "message": "init all settings completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:34", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 63, "message": "init all application completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:34", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:34", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:37", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:37", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:40", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:40", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:43", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:43", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:46", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:46", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:49", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:49", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:52", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:52", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:55", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:55", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:58", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:48:58", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:01", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:01", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:04", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:04", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:37", "level": "INFO", "module": "main", "function": "<module>", "line": 43, "message": "nsopw-- execution started", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:37", "level": "DEBUG", "module": "main", "function": "__init__", "line": 53, "message": "Framework initiated", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:37", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 58, "message": "init all settings completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:37", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 63, "message": "init all application completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:37", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:37", "level": "INFO", "module": "main", "function": "process_transaction", "line": 74, "message": "process started", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:49:37", "level": "INFO", "module": "z_process", "function": "process", "line": 18, "message": "106 - transaction started", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:22", "level": "INFO", "module": "z_process", "function": "process", "line": 23, "message": "106 - transaction completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:22", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 80, "message": "process completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:22", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 90, "message": "set transaction completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:22", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:22", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:25", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:25", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:28", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:28", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:31", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 70, "message": "get transaction data completed", "process": "nsopw"}
+{"timestamp": "2024-04-06 11:51:31", "level": "DEBUG", "module": "main", "function": "run", "line": 100, "message": "transaction data received empty. so exiting the process", "process": "nsopw"}

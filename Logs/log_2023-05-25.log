@@ -1,0 +1,205 @@
+{"timestamp": "2023-05-25 09:56:15", "level": "DEBUG", "module": "main", "function": "__init__", "line": 27, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 09:56:15", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 32, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 09:56:17", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 37, "message": "init all application completed"}
+{"timestamp": "2023-05-25 09:56:23", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 42, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:31:32", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:31:32", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:31:34", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:31:40", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:32:22", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:32:22", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:32:24", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:32:35", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:33:33", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:33:33", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:33:35", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:33:38", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:34:24", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:34:24", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:34:26", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:34:28", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:35:24", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:35:24", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:35:26", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:35:28", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:36:29", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:36:29", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:36:31", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:36:33", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:40:42", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:40:42", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:40:44", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:44:03", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:44:03", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:44:05", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:44:42", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:51:43", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:51:43", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:51:46", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:51:48", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:54:51", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:54:51", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:54:53", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:54:55", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:57:59", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:57:59", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:58:01", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:58:04", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 10:59:01", "level": "DEBUG", "module": "main", "function": "__init__", "line": 30, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 10:59:01", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 35, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 10:59:03", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 40, "message": "init all application completed"}
+{"timestamp": "2023-05-25 10:59:05", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 45, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:30:24", "level": "DEBUG", "module": "main", "function": "__init__", "line": 23, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 12:30:24", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 28, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 12:30:26", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 33, "message": "init all application completed"}
+{"timestamp": "2023-05-25 12:30:28", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:30:37", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:30:49", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:44", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:51", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:52", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:53", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:53", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:54", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:55", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:56", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:56", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:57", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:58", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:31:59", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:32:00", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:32:18", "level": "DEBUG", "module": "main", "function": "__init__", "line": 23, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 12:32:18", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 28, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 12:32:20", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 33, "message": "init all application completed"}
+{"timestamp": "2023-05-25 12:32:51", "level": "DEBUG", "module": "main", "function": "__init__", "line": 23, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 12:32:51", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 28, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 12:32:53", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 33, "message": "init all application completed"}
+{"timestamp": "2023-05-25 12:32:56", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 12:37:11", "level": "DEBUG", "module": "main", "function": "__init__", "line": 23, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 12:37:11", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 28, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 12:37:14", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 33, "message": "init all application completed"}
+{"timestamp": "2023-05-25 12:37:16", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:01:57", "level": "DEBUG", "module": "main", "function": "__init__", "line": 23, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 13:01:57", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 28, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 13:02:00", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 33, "message": "init all application completed"}
+{"timestamp": "2023-05-25 13:02:02", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:05:09", "level": "DEBUG", "module": "main", "function": "__init__", "line": 23, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 13:05:09", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 28, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 13:05:12", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 33, "message": "init all application completed"}
+{"timestamp": "2023-05-25 13:05:13", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:05:44", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:33", "level": "DEBUG", "module": "main", "function": "__init__", "line": 23, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 13:07:33", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 28, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 13:07:35", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 33, "message": "init all application completed"}
+{"timestamp": "2023-05-25 13:07:37", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:39", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:40", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:41", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:43", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:44", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:46", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:47", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:48", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:50", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:51", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:52", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:54", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:55", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:56", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:58", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:07:59", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:01", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:02", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:04", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:05", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:07", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:08", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:10", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:11", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:14", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:15", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:17", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:18", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:19", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:21", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:22", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:08:23", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:37", "level": "DEBUG", "module": "main", "function": "__init__", "line": 23, "message": "Framework initiated"}
+{"timestamp": "2023-05-25 13:09:37", "level": "DEBUG", "module": "main", "function": "init_all_settings", "line": 28, "message": "init all settings completed"}
+{"timestamp": "2023-05-25 13:09:39", "level": "DEBUG", "module": "main", "function": "init_all_applications", "line": 33, "message": "init all application completed"}
+{"timestamp": "2023-05-25 13:09:42", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:42", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:42", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:42", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:44", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:44", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:44", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:44", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:45", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:45", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:45", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:46", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:47", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:47", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:47", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:47", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:48", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:48", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:48", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:49", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:50", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:50", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:50", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:50", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:51", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:51", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:51", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:51", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:52", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:52", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:52", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:53", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:54", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:54", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:54", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:54", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:56", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:56", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:56", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:56", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:57", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:57", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:57", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:58", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:09:59", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:09:59", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:09:59", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:09:59", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:10:00", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:10:00", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:10:00", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:10:01", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:10:02", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:10:02", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:10:02", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:10:02", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:10:03", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:10:03", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:10:03", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:10:04", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:10:04", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:10:04", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:10:04", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:10:05", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:10:06", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:10:06", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:10:06", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:10:06", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:10:07", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:10:07", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:10:07", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:10:08", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}
+{"timestamp": "2023-05-25 13:10:09", "level": "DEBUG", "module": "main", "function": "get_transaction_data", "line": 38, "message": "get transaction data completed"}
+{"timestamp": "2023-05-25 13:10:09", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 42, "message": "process started"}
+{"timestamp": "2023-05-25 13:10:09", "level": "DEBUG", "module": "main", "function": "process_transaction", "line": 46, "message": "process completed"}
+{"timestamp": "2023-05-25 13:10:09", "level": "DEBUG", "module": "main", "function": "set_transaction_status", "line": 57, "message": "set transaction completed"}

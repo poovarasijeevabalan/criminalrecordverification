@@ -1,0 +1,418 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	California Megans Law
+</title><link href="Styles/Search.css" rel="stylesheet">
+    <script type="text/javascript" src="Scripts/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+    <link href="Styles/jquery-ui-1.11.2.custom/jquery-ui.min.css" rel="stylesheet"><link href="Styles/SOMA.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        html
+        {
+            overflow:auto;
+        }
+        .slick-header-column
+        {
+            min-height:26px;
+        }
+    </style>
+
+    <script>
+        var map = null;
+        var offenderMarker = null;
+        $(function () {
+            var FCN = $("#CAFCN").val();
+            if (FCN == "") {
+                window.location = 'https://meganslaw.ca.gov';
+                return;
+            }
+
+            openID(FCN);
+        });
+
+        function formatHeight(h) {
+            if (h.length == 3) {
+                h = h.charAt(0) + "'" + h.charAt(1) + h.charAt(2);
+            }
+
+            return h;
+        }
+
+        function initializeMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(38.147723, -119.7760557),
+                zoom: 6,
+                disableDefaultUI: true,
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: false,
+                scaleControl: true,
+                streetViewControl: false,
+                overviewMapControl: true
+            };
+
+            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            //google.maps.event.addDomListener(window, "resize", function () {
+            //    var center = map.getCenter();
+            //    google.maps.event.trigger(map, "resize");
+            //    map.setCenter(center);
+            //});
+        }
+
+        function writeOffender(o) {
+            if (o.FCN == "") {
+                alert("An error has occurred.");
+                window.location = "https://meganslaw.ca.gov";
+            }
+
+            currOffender = o;
+            var template = "";
+            var html = new Array();
+            var suffix = (o.Suffix == null || o.Suffix == "") ? "" : " " + o.Suffix;
+            $("#POffenderProfile").html(o.LastName + suffix + ", " + o.FirstName + " " + o.MiddleName);
+            $("#OffenderProfileImage").attr("src", "PI.ashx?t=f&f=" + o.FCN + "&p=" + encodeURIComponent(o.Path));
+            var cls = "";
+            if (o.IsSVP) cls = "SVPBorder";
+            if (o.InViolationFlag) cls = "InViolationBorder";
+            $("#OffenderProfileImage").attr("class", cls);
+
+
+            if (o.AKA != null && o.AKA.length > 0) {
+                html.push("<ul>");
+                for (var i = 0; i < o.AKA.length; i++) {
+                    suffix = (o.AKA[i].Suffix == null || o.AKA[i].Suffix == "") ? "" : " " + o.AKA[i].Suffix;
+                    html.push("<li>" + o.AKA[i].LastName + suffix + ", " + o.AKA[i].FirstName + " " + o.AKA[i].MiddleName + "</li>");
+                }
+                html.push("</ul>");
+            }
+            else {
+                html.push("<ul><li>None</li></ul>")
+            }
+
+            $("#PAliasList").html(html.join(''));
+            $("#PDOB").html(o.DOB);
+            $("#PSex").html(o.Sex);
+            $("#PHeight").html(formatHeight(o.Height));
+            $("#PWeight").html(o.Weight);
+            $("#PEyeColor").html(o.EyeColor);
+            $("#PHairColor").html(o.HairColor);
+            $("#PEthnicity").html(o.Race);
+
+            //Status
+            $("#PStatus").html("");
+            if (o.IsSVP) $("#PStatus").append("<div style=\"color:red\"><b>Sexually Violent Predator</b></div>");
+            if (o.InViolationFlag) $("#PStatus").append("<div style=\"color:red\"><b>In Violation</b></span></div>");
+
+            //OFFENSES
+            $("#POffenses").empty();
+            for (var i = 0; i < o.Offenses.length; i++) {
+                template = $("#POffensesTemplate").html();
+                template = template.replace(/ZZZ/g, i);
+                $("#POffenses").append(template);
+                var oc = o.Offenses[i].Code.replace(/^[a-zA-Z]/, "");
+                $("#POffenseCode_" + i).html(oc);
+                $("#PDescription_" + i).html(o.Offenses[i].Description);
+                var yrc = (o.Offenses[i].YearConvicted == null || o.Offenses[i].YearConvicted == 0) ? "" : o.Offenses[i].YearConvicted;
+                var yrr = (o.Offenses[i].YearRelease == null || o.Offenses[i].YearRelease == 0) ? "" : o.Offenses[i].YearRelease;
+                $("#PLastConviction_" + i).html(yrc);
+                $("#PLastRelease_" + i).html(yrr);
+            }
+
+            //Subsequent incarceration
+            $("#POffenses").append("<tr><td colspan=\"2\" style=\"text-align:center\">" + getSSFIText(o.SFIInd) + "</td></tr>");
+
+            $("#PRiskAssessment").empty();
+            if (o.RA.length > 0) {
+                var ratext = "";
+                for (var i = 0; i < o.RA.length; i++) {
+                    ratext += "<tr><td colspan=\"2\"><b>Score: </b>" + o.RA[i].Score + "&nbsp;&nbsp;&nbsp;&nbsp;<b>Tool: </b>" + o.RA[i].Tool + "</td></tr>";
+                }
+            }
+
+            $("#PRiskAssessment").html(ratext);
+            var FCN = $("#CAFCN").val();
+            //ADDRESSES
+            if (o.Latitude != 0 && o.IsMappable) {
+                //initializeMap();
+                //var lat = o.Latitude;
+                //var lon = o.Longitude;
+                //mapID(lat, lon);
+                //centerMap(lat, lon);
+                $("#map-canvas").html("<a href=\"MapOffender.aspx?ID="+ FCN +"&NSOPRFlag=True\">Map It</a>");
+            }
+            else {
+                $("#map-canvas").html("Offender not mappable.");
+            }
+            $("#PAddresses").empty();
+            if (o.City != null && o.City != "") {
+                template = $("#PAddressTemplate").html();
+                template = template.replace(/ZZZ/g, "LKA");
+                $("#PAddresses").append(template);
+                $("#PAddressType_LKA").html("<b>Last Reported Address:&nbsp;<b/>");
+                var apt = (o.AptNumber != null && o.AptNumber != "") ? " " + $.trim(o.AptNumber) : "";
+
+                var streetString = $.trim(o.StreetAddress + " " + o.StreetName + apt);
+                if (streetString != "") streetString += ", ";
+
+                $("#PAddress_LKA").html(streetString + o.City + ", " + o.ZIP + "<div>County: " + o.County + "</div>");
+            }
+
+            if (o.AddAddresses != null) {
+                for (var i = 0; i < o.AddAddresses.length; i++) {
+                    template = $("#PAddressTemplate").html();
+                    template = template.replace(/ZZZ/g, i);
+                    $("#PAddresses").append(template);
+                    $("#PAddressType_" + i).html("<b>Additional Reported Address:&nbsp;<b/>");
+                    $("#PAddress_" + i).html(o.AddAddresses[i].StreetNumber + " " + o.AddAddresses[i].StreetName + ", " + o.AddAddresses[i].City + ", " + o.AddAddresses[i].ZIP + "<div>County: " + o.AddAddresses[i].County + "</div>");
+                }
+            }
+
+            //SMT
+            html = new Array();
+            if (o.SMT != null && o.SMT.length > 0) {
+                html.push("<ul>");
+                for (var i = 0; i < o.SMT.length; i++) {
+                    html.push("<li>" + o.SMT[i].Mark + "</li>");
+                }
+                html.push("</ul>");
+            }
+            else {
+                html.push("<ul><li>None</li></ul>");
+            }
+
+            $("#PSMTs").html(html.join(''));
+        }
+
+        function openID(id) {
+            $("#OffenderProfileImage").attr("src", "Images/PhotoNotAvail.gif");
+            var o = $.parseJSON($("#CAFCN").val());
+            writeOffender(o);
+        }
+
+        function mapID(lat, lon) {
+            var latLng = new google.maps.LatLng(lat, lon);
+            homeMarker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                zIndex: 1
+            });
+        }
+
+        function centerMap(lat, lon) {
+            var latLng = new google.maps.LatLng(lat, lon);
+            map.setCenter(latLng);
+            map.setZoom(10);
+        }
+
+        function handleError(o) {
+            alert("An error has occurred. Please try again later.");
+        }
+
+        function getSSFIText(s) {
+            var rv = ""
+            if (s == null) return "";
+            switch (s.toUpperCase()) {
+                case "U":
+                    rv = "The Department of Justice has no information about a subsequent felony incarceration for this registrant";
+                    break;
+
+                case "N":
+                    rv = "The Department of Justice has no information about a subsequent felony incarceration for this registrant";
+                    break;
+
+                case "Y":
+                    rv = "This Registrant has a subsequent felony incarceration";
+                    break;
+
+                case "S":
+                    rv = "The Department of Justice has no information about a subsequent felony incarceration for this registrant";
+                    break;
+            }
+
+            return rv;
+        }
+    </script>
+</head>
+<body>
+    <form method="post" action="./OffenderDisplay.aspx?searchby=offender&amp;ID=18616258F0469&amp;NSOPRFlag=True" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3NDMzNDA3NjJkZFz0IyBup62TbqmJcrzb7h2T+U/4H0f5Eg7A/zEpNDrL">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1B4E2EAA">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALwM22jXcY9LJ10JL4MbGDcnuYxVKLP/h/s/4dsejk34bStwt0UfvQF9GVd3lsfhkgrVriTKPFD/TIFHQWk0yje">
+</div>
+            <div style="margin-left:0px">
+                <div class="title">
+                    <h1><span id="ml-title">California Megan's Law Website</span><br><span class="main-title"><span>State <i>of</i> California Department <i>of</i> Justice</span>
+                        <span class="nowrap gray">Office <i>of</i> the Attorney General </span>
+                    </span>
+                    </h1>
+                    
+                </div>
+
+            </div>
+        <div style="padding:0px 15px 0px 30px">
+    <div title="Offender Profile" id="OffenderPop">
+            <h3 id="POffenderProfile">YOUNG, LARRY ALEXANDER</h3>
+            <table>
+                <tbody><tr>
+                    <td valign="top">
+                        <img id="OffenderProfileImage" src="PI.ashx?t=f&amp;f=18616258F0469&amp;p=CATALOG%5CPHOTO%5C317%5C50195718.jpg" style="width: 225px" class="InViolationBorder"><br>
+                        <div id="PStatus"><div style="color:red"><b>In Violation</b></div></div>
+                        <div id="ContactMessage" style="padding:6px;text-align:center;font-weight:bold;width:213px">
+                            If you believe a crime has been committed, please contact your local law enforcement agency.
+                        </div>
+
+                    </td>
+                    <td style="width: 15px;"></td>
+                    <td valign="top">
+                        
+                        <table id="PDataTable">
+                            
+                            <tbody><tr><td colspan="2"><h2 style="margin-top: 0px;">Known Aliases</h2></td></tr>
+                            </tbody><tbody>
+                            <tr><td colspan="2" id="PAliasList"><ul><li>YOUNG, LARRY </li><li>DOE, JOHN </li><li>YOUNG, ALEXANDER LARRY</li><li>REUP, SUPREME </li><li>YOUNG, LARRY A</li></ul></td></tr>
+                            </tbody>
+                            <tbody><tr><td colspan="2"><h2>Description</h2></td></tr>
+                            </tbody><tbody>
+                            <tr>
+                                <td><b>Date Of Birth:</b></td>
+                                <td id="PDOB">10/31/1985</td>
+                            </tr>
+                            <tr>
+                                <td><b>Sex:</b></td>
+                                <td id="PSex">MALE</td>
+                            </tr>
+                            <tr>
+                                <td><b>Height:</b></td>
+                                <td id="PHeight">6'02</td>
+                            </tr>
+                            <tr>
+                                <td><b>Weight:</b></td>
+                                <td id="PWeight">186</td>
+                            </tr>
+                            <tr>
+                                <td><b>Eye Color:</b></td>
+                                <td id="PEyeColor">BROWN</td>
+                            </tr>
+                            <tr>
+                                <td><b>Hair Color:</b></td>
+                                <td id="PHairColor">BLACK</td>
+                            </tr>
+                            <tr>
+                                <td><b>Ethnicity:</b></td>
+                                <td id="PEthnicity">BLACK</td>
+                            </tr>
+                            </tbody>
+                            <tbody><tr><td colspan="2"><h2>Offenses</h2></td></tr>
+                            </tbody><tbody id="POffenses">
+                                <tr>
+                                    <td valign="top"><b>Offense Code:</b></td>
+                                    <td valign="top" id="POffenseCode_0">314.1</td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Description:</b></td>
+                                    <td valign="top" id="PDescription_0">INDECENT EXPOSURE</td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Year of Last Conviction:</b></td>
+                                    <td valign="top" id="PLastConviction_0">2016</td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Year of Last Release:</b></td>
+                                    <td valign="top" id="PLastRelease_0">2016</td>
+                                </tr>
+                                <tr><td class="spacer">&nbsp;</td><td class="spacer">&nbsp;</td></tr>
+                                
+                                <tr>
+                                    <td valign="top"><b>Offense Code:</b></td>
+                                    <td valign="top" id="POffenseCode_1">314.1</td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Description:</b></td>
+                                    <td valign="top" id="PDescription_1">INDECENT EXPOSURE WITH PRIOR CONVICTION FOR THIS OFFENSE</td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Year of Last Conviction:</b></td>
+                                    <td valign="top" id="PLastConviction_1"></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Year of Last Release:</b></td>
+                                    <td valign="top" id="PLastRelease_1"></td>
+                                </tr>
+                                <tr><td class="spacer">&nbsp;</td><td class="spacer">&nbsp;</td></tr>
+                                <tr><td colspan="2" style="text-align:center">This Registrant has a subsequent felony incarceration</td></tr></tbody>
+                            <tbody><tr><td colspan="2"><h2>Risk Assessment</h2></td></tr>
+                        </tbody><tbody id="PRiskAssessment"><tr><td colspan="2"><b>Score: </b>5&nbsp;&nbsp;&nbsp;&nbsp;<b>Tool: </b>STATIC 99R</td></tr></tbody>
+ 
+                        <tbody><tr><td colspan="2"><h2>Addresses</h2></td></tr>
+                        <tr><td colspan="2"><div id="PViewOnMap" style="display: none"><a href="#" onclick="mapIDProfile()" style="color: blue;">View On Map</a></div></td></tr>
+                        </tbody><tbody id="PAddresses">
+                                        <tr>
+                                            <td id="PAddressType_LKA" valign="top"><b>Last Reported Address:&nbsp;<b></b></b></td>
+                                            <td valign="top" id="PAddress_LKA">2300 BEACHFRONT ST, LONG BEACH, 90813<div>County: LOS ANGELES</div></td>
+                                        </tr>
+
+                                    </tbody>
+
+                        <tbody><tr><td colspan="2"><h2>Scars/Marks/Tattoos</h2></td></tr>
+                        <tr><td colspan="2" id="PSMTs"><ul><li>None</li></ul></td></tr>
+
+                        <tr><td colspan="2"><h2>Offender Location</h2></td></tr>
+                        <tr><td colspan="2">
+            <div id="map-canvas" style="margin:0px;display:block;width:800px;height:600px;">Offender not mappable.</div>
+                            </td></tr>
+                    </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+            
+        </div>
+        <input type="hidden" name="CAFCN" id="CAFCN" value="{&quot;FCN&quot;:&quot;18616258F0469&quot;,&quot;LastName&quot;:&quot;YOUNG&quot;,&quot;FirstName&quot;:&quot;LARRY&quot;,&quot;MiddleName&quot;:&quot;ALEXANDER&quot;,&quot;StreetAddress&quot;:&quot;2300&quot;,&quot;StreetName&quot;:&quot;BEACHFRONT ST&quot;,&quot;City&quot;:&quot;LONG BEACH&quot;,&quot;State&quot;:&quot;CA&quot;,&quot;ZIP&quot;:&quot;90813&quot;,&quot;County&quot;:&quot;LOS ANGELES&quot;,&quot;AptNumber&quot;:&quot;&quot;,&quot;Height&quot;:&quot;602&quot;,&quot;Weight&quot;:&quot;186&quot;,&quot;DOB&quot;:&quot;10/31/1985&quot;,&quot;InViolationFlag&quot;:true,&quot;Latitude&quot;:33.7792096,&quot;Longitude&quot;:-118.1772102,&quot;Race&quot;:&quot;BLACK&quot;,&quot;Sex&quot;:&quot;MALE&quot;,&quot;HairColor&quot;:&quot;BLACK&quot;,&quot;EyeColor&quot;:&quot;BROWN&quot;,&quot;Suffix&quot;:&quot;&quot;,&quot;Soundex&quot;:&quot;YANG&quot;,&quot;Diminutive&quot;:&quot;LAWRENCE&quot;,&quot;Transient&quot;:&quot;&quot;,&quot;IsSVP&quot;:false,&quot;MeganLawStatus&quot;:&quot;11/03/2022&quot;,&quot;RiskCode&quot;:null,&quot;VioDate&quot;:&quot;11/11/2023&quot;,&quot;SVPVioDate&quot;:&quot;&quot;,&quot;TransVioDate&quot;:&quot;&quot;,&quot;GeocodType&quot;:0,&quot;ORI&quot;:&quot;CA0194100&quot;,&quot;GeocodeResults&quot;:0,&quot;DOBType&quot;:0,&quot;SMT&quot;:[],&quot;AddAddresses&quot;:[],&quot;AKA&quot;:[{&quot;LastName&quot;:&quot;YOUNG&quot;,&quot;MiddleName&quot;:&quot;&quot;,&quot;FirstName&quot;:&quot;LARRY&quot;,&quot;Suffix&quot;:&quot;&quot;},{&quot;LastName&quot;:&quot;DOE&quot;,&quot;MiddleName&quot;:&quot;&quot;,&quot;FirstName&quot;:&quot;JOHN&quot;,&quot;Suffix&quot;:&quot;&quot;},{&quot;LastName&quot;:&quot;YOUNG&quot;,&quot;MiddleName&quot;:&quot;LARRY&quot;,&quot;FirstName&quot;:&quot;ALEXANDER&quot;,&quot;Suffix&quot;:&quot;&quot;},{&quot;LastName&quot;:&quot;REUP&quot;,&quot;MiddleName&quot;:&quot;&quot;,&quot;FirstName&quot;:&quot;SUPREME&quot;,&quot;Suffix&quot;:&quot;&quot;},{&quot;LastName&quot;:&quot;YOUNG&quot;,&quot;MiddleName&quot;:&quot;A&quot;,&quot;FirstName&quot;:&quot;LARRY&quot;,&quot;Suffix&quot;:&quot;&quot;}],&quot;Offenses&quot;:[{&quot;Code&quot;:&quot;314.1&quot;,&quot;Description&quot;:&quot;INDECENT EXPOSURE&quot;,&quot;DispCode&quot;:&quot;314.1&quot;,&quot;Attempted&quot;:0,&quot;Conspiracy&quot;:0,&quot;YearConvicted&quot;:2016,&quot;YearRelease&quot;:2016},{&quot;Code&quot;:&quot;b314.1&quot;,&quot;Description&quot;:&quot;INDECENT EXPOSURE WITH PRIOR CONVICTION FOR THIS OFFENSE&quot;,&quot;DispCode&quot;:&quot;314.1&quot;,&quot;Attempted&quot;:0,&quot;Conspiracy&quot;:0,&quot;YearConvicted&quot;:0,&quot;YearRelease&quot;:0}],&quot;RA&quot;:[{&quot;Tool&quot;:&quot;STATIC 99R&quot;,&quot;Score&quot;:5,&quot;RiskLevel&quot;:&quot;ABOVE AVERAGE RISK (FORMERLY MODERATE-HIGH RISK)&quot;,&quot;AssessDate&quot;:44838,&quot;ScoreStatus&quot;:0}],&quot;Path&quot;:&quot;CATALOG\\PHOTO\\317\\50195718.jpg&quot;,&quot;AddressType&quot;:&quot;RES&quot;,&quot;GeocodeType&quot;:0,&quot;CDC&quot;:null,&quot;FBI&quot;:null,&quot;CIIPrefix&quot;:null,&quot;CII&quot;:null,&quot;CYA&quot;:null,&quot;OLN&quot;:null,&quot;OLNState&quot;:null,&quot;FPDOJ&quot;:null,&quot;FPVerified&quot;:null,&quot;Validated&quot;:null,&quot;Juvinile&quot;:null,&quot;CYAOffender&quot;:null,&quot;OverrideMegan&quot;:null,&quot;PreRegistration&quot;:null,&quot;RegistrationDate&quot;:&quot;0001-01-01T00:00:00&quot;,&quot;NotificationViolation&quot;:null,&quot;AnnualViolation&quot;:null,&quot;TransientViolation&quot;:null,&quot;SVPViolation&quot;:null,&quot;Age&quot;:0,&quot;PublicInternetAddress&quot;:null,&quot;SFIInd&quot;:&quot;Y&quot;}">
+         <table style="display: none;border-collapse:collapse">
+                                <tbody id="POffensesTemplate">
+                                <tr>
+                                    <td valign="top"><b>Offense Code:</b></td>
+                                    <td valign="top" id="POffenseCode_ZZZ"></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Description:</b></td>
+                                    <td valign="top" id="PDescription_ZZZ"></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Year of Last Conviction:</b></td>
+                                    <td valign="top" id="PLastConviction_ZZZ"></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Year of Last Release:</b></td>
+                                    <td valign="top" id="PLastRelease_ZZZ"></td>
+                                </tr>
+                                <tr><td class="spacer">&nbsp;</td><td class="spacer">&nbsp;</td></tr>
+                                </tbody>
+                        </table>
+
+                                <table style="display: none">
+                                    <tbody id="PAddressTemplate">
+                                        <tr>
+                                            <td id="PAddressType_ZZZ" valign="top"></td>
+                                            <td valign="top" id="PAddress_ZZZ"></td>
+                                        </tr>
+
+                                    </tbody>
+                            </table>
+    </form>
+
+
+</body></html>

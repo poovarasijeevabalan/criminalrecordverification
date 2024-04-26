@@ -1,0 +1,3 @@
+{"timestamp": "2023-06-01 12:23:38", "level": "INFO", "module": "main", "function": "<module>", "line": 34, "message": "TX RuleEngine-- execution started", "process": "TX RuleEngine"}
+{"timestamp": "2023-06-01 12:23:44", "level": "INFO", "module": "main", "function": "process_transaction", "line": 60, "message": "process started", "process": "TX RuleEngine"}
+{"timestamp": "2023-06-01 12:23:46", "level": "INFO", "module": "main", "function": "process_transaction", "line": 60, "message": "process started", "process": "TX RuleEngine"}
